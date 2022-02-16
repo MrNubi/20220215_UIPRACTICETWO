@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                 if(resultCode == RESULT_OK){
 
 
-                    val new_Nickname = data?.getStringExtra(ContactsContract.CommonDataKinds.Nickname)
+                    val new_Nickname = data?.getStringExtra("nick")
 
                     T3.text = new_Nickname
 
