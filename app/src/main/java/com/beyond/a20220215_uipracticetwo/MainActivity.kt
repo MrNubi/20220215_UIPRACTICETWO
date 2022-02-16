@@ -3,6 +3,8 @@ package com.beyond.a20220215_uipracticetwo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -44,6 +46,7 @@ class MainActivity : AppCompatActivity() {
             //결과를 얻어내려 가는 동작 -> 단순 이동 아님
             //frequest code -> 닉네임 받으러 간다는 신호값
 
+
 //            finish()
 
         }
@@ -51,4 +54,35 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        //결과 수신용 코드 - 종합 처리 창구
+
+        //리퀘스트 코드 확인
+
+        if (requestCode == RequestCode_Nickname){
+
+
+                if(resultCode == RESULT_OK){
+
+
+                    val new_Nickname = data?.getStringExtra(ContactsContract.CommonDataKinds.Nickname)
+
+                    T3.text = new_Nickname
+
+
+
+
+
+                }
+
+        }
+
+
+
+    }
+
+
 }

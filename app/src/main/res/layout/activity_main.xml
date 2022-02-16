@@ -42,12 +42,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <EditText
+    <TextView
+        android:textSize="30sp"
+        android:text="닉네임 존"
         android:layout_weight="2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="닉네임 입력"
-        android:id="@+id/EDT2"></EditText>
+        android:id="@+id/EDT2"></TextView>
 
     <Button
 

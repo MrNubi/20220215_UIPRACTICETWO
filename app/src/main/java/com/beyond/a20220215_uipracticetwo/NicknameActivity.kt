@@ -21,7 +21,9 @@ class NicknameActivity : AppCompatActivity() {
 
             //복귀 결과로 최종 세팅해줘야 됨
             //실제로 확인을 누른 게 맞다 + 돌고 돌아갈 데이터
-            setResult(RESULT_OK, )
+            setResult(RESULT_OK, resultIntent)
+
+            finish()
 
         }
 
