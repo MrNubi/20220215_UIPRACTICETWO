@@ -29,6 +29,15 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="여기에 표시"></TextView>
+
+    <TextView
+        android:id="@+id/T3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="닉네임 "></TextView>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,7 +46,7 @@
         android:layout_weight="2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="아무거나"
+        android:hint="닉네임 입력"
         android:id="@+id/EDT2"></EditText>
 
     <Button
